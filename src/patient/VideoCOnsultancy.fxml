@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" prefHeight="849.0" prefWidth="691.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+         <children>
+            <Text fill="#168008" layoutX="30.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Video Consultancy Booking">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Text>
+            <TextField alignment="CENTER" layoutX="239.0" layoutY="147.0" prefHeight="55.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </TextField>
+            <Text fill="#00bbfa" layoutX="114.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextField alignment="CENTER" layoutX="241.0" layoutY="237.0" prefHeight="55.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </TextField>
+            <Text fill="#00bbfa" layoutX="24.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text fill="#00bbfa" layoutX="104.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextArea layoutX="239.0" layoutY="322.0" prefHeight="115.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </TextArea>
+            <TextField alignment="CENTER" layoutX="238.0" layoutY="464.0" prefHeight="55.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </TextField>
+            <Text fill="#00bbfa" layoutX="123.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <DatePicker layoutX="237.0" layoutY="576.0" prefHeight="31.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </DatePicker>
+            <Text fill="#00bbfa" layoutX="135.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextField alignment="CENTER" layoutX="239.0" layoutY="655.0" prefHeight="55.0" prefWidth="278.0">
+               <effect>
+                  <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+               </effect>
+            </TextField>
+            <Text fill="#00bbfa" layoutX="114.0" layoutY="696.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Button alignment="CENTER" layoutX="266.0" layoutY="743.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="169.0" text="Submit" textFill="#168008">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.25" color="#00bbfa" height="61.43" radius="30.215" width="61.43" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
+   </effect>
+</AnchorPane>
