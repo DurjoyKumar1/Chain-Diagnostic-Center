@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.8275" width="66.54" />
+   </effect>
+   <children>
+      <Label layoutX="220.0" layoutY="26.0" prefHeight="40.0" prefWidth="309.0" text=" Accessibilty Settings" textFill="#168008">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="79.0" prefHeight="28.0" prefWidth="462.0" text="Review current training materials and accessibilty:" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="418.0" text="Write if any quality  need to be fixed:" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="293.0" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="14.0" layoutY="454.0" prefHeight="118.0" prefWidth="515.0" />
+      <TableView layoutX="23.0" layoutY="107.0" prefHeight="127.0" prefWidth="673.0">
+        <columns>
+          <TableColumn prefWidth="190.0" text="Serial " />
+          <TableColumn prefWidth="135.0" text="training name " />
+            <TableColumn prefWidth="358.0" text="traininig materails accessibilty" />
+        </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="248.0" text="Other accessibility that might be inluded" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="39.0" layoutY="375.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="106.0" text="Audio" textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="39.0" layoutY="293.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="Video" textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="39.0" layoutY="335.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="166.0" text=" Written materials" textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
