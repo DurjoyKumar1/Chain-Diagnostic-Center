@@ -23,12 +23,12 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="33.0" layoutY="313.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Tax ">
+      <Button layoutX="33.0" layoutY="294.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Tax ">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="381.0" layoutY="313.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Invoice">
+      <Button layoutX="381.0" layoutY="294.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Invoice">
          <font>
             <Font size="25.0" />
          </font>
@@ -43,12 +43,12 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="33.0" layoutY="599.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Audit Maintain Cost">
+      <Button layoutX="33.0" layoutY="583.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Audit Maintain Cost">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="381.0" layoutY="599.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Analysis Data">
+      <Button layoutX="381.0" layoutY="583.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Analysis Data">
          <font>
             <Font size="25.0" />
          </font>
