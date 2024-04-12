@@ -7,17 +7,18 @@ package patient;
 import java.net.URL;
 import static java.util.Locale.filter;
 import java.util.ResourceBundle;
+import java.util.regex.Pattern;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TextFormatter;
 import javafx.scene.control.ToggleGroup;
 
 /**
@@ -46,7 +47,8 @@ public class OnlineDrAppoinmentController implements Initializable {
     @FXML
     private TextArea infoTextArea;
     
-    
+    Alert seccess = new Alert(Alert.AlertType.CONFIRMATION, "Successfully Complete Appoinment Request" );
+    Alert error = new Alert(Alert.AlertType.ERROR, "Please Complete all the field properly" );
     /**
      * Initializes the controller class.
      */
@@ -60,16 +62,32 @@ public class OnlineDrAppoinmentController implements Initializable {
         oldPatientRadioButton.setToggleGroup(tg);
         
     }    
-
+     private boolean containsOnlyDigits(String str) {
+        Pattern pattern = Pattern.compile("\\d+");
+        return pattern.matcher(str).matches();
+    }
+    
+    
     @FXML
     private void submitButtonMouseOnClick(ActionEvent event) {
         String name = fullNameTextField.getText();
         String phoneNumber = phoneNumberTextField.getText(); 
         String email = emailTextField.getText();
-        if (agreeCheckBoxFxid.isSelected()){
-        infoTextArea.setText("Patient Name: "+name+"\n"+"Phone Number: "+phoneNumber+"\n"+"Email: "+email);
+        if (agreeCheckBoxFxid.isSelected()&& !name.isEmpty() && 
+            !phoneNumber.isEmpty()&& containsOnlyDigits(phoneNumber) && phoneNumber.length()==11 
+            && !email.isEmpty() && 
+            (newPatientRadioButton.isSelected() || oldPatientRadioButton.isSelected())
+            &&doctorCombobox.getValue() != null && departmentCombobox.getValue() != null){
+        infoTextArea.setText("Patient Name: "+name+"\n"+"Phone Number: "+phoneNumber+"\n"+
+                "Email: "+email+"\n"+
+                "Department: "+departmentCombobox.getValue()+"\n" + "Doctor Name: " +doctorCombobox.getValue()
+                
+        
+        );
+        
+        seccess.show();
         }else{
-            infoTextArea.setText("error");
+            error.show();
         }
     }
 

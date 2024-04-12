@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.BranchNameController">
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="67.64" radius="34.875" width="73.86" />
    </effect>
    <children>
-      <Button alignment="CENTER" layoutX="52.0" layoutY="42.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Mirpur" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="52.0" layoutY="42.0" mnemonicParsing="false" onAction="#mirpurBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Mirpur" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -18,7 +18,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="377.0" layoutY="42.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Badda" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="377.0" layoutY="42.0" mnemonicParsing="false" onAction="#baddaBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Badda" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -26,7 +26,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="52.0" layoutY="193.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Uttora" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="52.0" layoutY="193.0" mnemonicParsing="false" onAction="#uttoraBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Uttora" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -34,7 +34,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="377.0" layoutY="193.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Farmgate" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="377.0" layoutY="193.0" mnemonicParsing="false" onAction="#farmgateBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Farmgate" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -42,7 +42,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="52.0" layoutY="336.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Motijheel" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="52.0" layoutY="336.0" mnemonicParsing="false" onAction="#motijheelBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Motijheel" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -50,7 +50,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="377.0" layoutY="336.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Shamoli" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="377.0" layoutY="336.0" mnemonicParsing="false" onAction="#shamoliBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Shamoli" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -58,7 +58,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="52.0" layoutY="484.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Mogbajar" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="52.0" layoutY="484.0" mnemonicParsing="false" onAction="#mogbajarBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Mogbajar" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>
@@ -66,7 +66,7 @@
             <InnerShadow choke="0.21" color="#168008" height="86.31" radius="37.212500000000006" width="64.54" />
          </effect>
       </Button>
-      <Button alignment="CENTER" layoutX="377.0" layoutY="484.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="249.0" text="Dhanmondi" textFill="#00bbfa">
+      <Button alignment="CENTER" layoutX="377.0" layoutY="484.0" mnemonicParsing="false" onAction="#dhanmondiBranchButtonMouseOnCLick" prefHeight="97.0" prefWidth="249.0" text="Dhanmondi" textFill="#00bbfa">
          <font>
             <Font size="26.0" />
          </font>

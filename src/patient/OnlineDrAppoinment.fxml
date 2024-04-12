@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.OnlineDrAppoinmentController">
+<AnchorPane id="AnchorPane" prefHeight="870.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.OnlineDrAppoinmentController">
    <children>
       <RadioButton fx:id="newPatientRadioButton" layoutX="48.0" layoutY="100.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" text="New Patient" textFill="#00bbfa">
          <font>
@@ -59,12 +59,12 @@
             <Font size="27.0" />
          </font>
       </TextField>
-      <CheckBox fx:id="agreeCheckBoxFxid" layoutX="48.0" layoutY="663.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="448.0" text="I agree with terms and conditions" textFill="#00bbfa">
+      <CheckBox fx:id="agreeCheckBoxFxid" layoutX="46.0" layoutY="501.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="448.0" text="I agree with terms and conditions" textFill="#00bbfa">
          <font>
             <Font size="27.0" />
          </font>
       </CheckBox>
-      <Button layoutX="279.0" layoutY="720.0" mnemonicParsing="false" onAction="#submitButtonMouseOnClick" prefHeight="49.0" prefWidth="221.0" text="Submit" textFill="#168008">
+      <Button layoutX="277.0" layoutY="558.0" mnemonicParsing="false" onAction="#submitButtonMouseOnClick" prefHeight="49.0" prefWidth="221.0" text="Submit" textFill="#168008">
          <font>
             <Font size="32.0" />
          </font>
@@ -117,7 +117,7 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <TextArea fx:id="infoTextArea" layoutX="46.0" layoutY="469.0" prefHeight="146.0" prefWidth="622.0" />
+      <TextArea fx:id="infoTextArea" layoutX="49.0" layoutY="667.0" prefHeight="146.0" prefWidth="622.0" />
    </children>
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
