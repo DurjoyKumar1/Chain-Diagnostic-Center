@@ -18,7 +18,7 @@ public class MainApplicationChainDiagnosticCentre extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("OnlineDrAppoinment.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("BranchName.fxml"));
         
         Scene scene = new Scene(root);
         
