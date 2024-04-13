@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.RatingController">
    <children>
-      <ComboBox layoutX="88.0" layoutY="150.0" prefHeight="47.0" prefWidth="312.0">
+      <ComboBox fx:id="ratingComboBox" layoutX="88.0" layoutY="150.0" prefHeight="47.0" prefWidth="312.0">
          <effect>
             <InnerShadow choke="0.2" color="#00bbfa" height="45.88" radius="25.55" width="58.32" />
          </effect>
@@ -20,7 +20,7 @@
             <Font size="75.0" />
          </font>
       </Text>
-      <TextArea layoutX="88.0" layoutY="294.0" prefHeight="200.0" prefWidth="312.0">
+      <TextArea fx:id="textAreaBoxFxId" layoutX="88.0" layoutY="294.0" prefHeight="200.0" prefWidth="312.0">
          <effect>
             <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
          </effect></TextArea>
@@ -29,7 +29,7 @@
             <Font size="26.0" />
          </font>
       </Text>
-      <Button alignment="CENTER" layoutX="178.0" layoutY="527.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="133.0" text="Submit" textFill="#168008">
+      <Button alignment="CENTER" layoutX="178.0" layoutY="527.0" mnemonicParsing="false" onAction="#rateUsSubmitButtoon" prefHeight="47.0" prefWidth="133.0" text="Submit" textFill="#168008">
          <font>
             <Font size="27.0" />
          </font>

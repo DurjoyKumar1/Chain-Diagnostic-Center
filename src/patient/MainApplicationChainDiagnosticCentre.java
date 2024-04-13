@@ -18,7 +18,7 @@ public class MainApplicationChainDiagnosticCentre extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("BranchName.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TestAndCharges.fxml"));
         
         Scene scene = new Scene(root);
         
