@@ -89,6 +89,7 @@
             <Font size="25.0" />
          </font>
       </Label>
+      <Button layoutX="70.0" layoutY="724.0" mnemonicParsing="false" onAction="#backButtonMouseONClick" text="Back" />
    </children>
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />

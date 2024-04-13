@@ -6,23 +6,14 @@ package patient;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
  *
  * @author hp
  */
-public class RatingController implements Initializable {
-
-    @FXML
-    private ComboBox<String> ratingComboBox;
-    @FXML
-    private TextArea textAreaBoxFxId;
+public class AuditMaintainCostController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -31,9 +22,5 @@ public class RatingController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void rateUsSubmitButtoon(ActionEvent event) {
-    }
     
 }

@@ -12,8 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="967.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.PatientLogInController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="4.0" layoutY="5.0" prefHeight="533.0" prefWidth="957.0">
          <children>
@@ -22,7 +21,7 @@
                   <Blend />
                </effect>
             </Rectangle>
-            <Text fill="#23bf0b" layoutX="91.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient" textAlignment="CENTER" wrappingWidth="261.6197814941406">
+            <Text fill="#23bf0b" layoutX="43.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountant" textAlignment="CENTER" wrappingWidth="357.6197814941406">
                <font>
                   <Font size="66.0" />
                </font>
@@ -32,21 +31,22 @@
                   <Image url="@../../7092779.jpg" />
                </image>
             </ImageView>
-            <TextField alignment="CENTER" layoutX="84.0" layoutY="226.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;" text="Phone Number">
+            <TextField alignment="CENTER" layoutX="84.0" layoutY="226.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" layoutX="87.0" layoutY="304.0" prefHeight="54.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;" text="Password">
+            <TextField alignment="CENTER" layoutX="87.0" layoutY="304.0" prefHeight="54.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <Button alignment="CENTER" layoutX="149.0" layoutY="393.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
+            <Button alignment="CENTER" layoutX="149.0" layoutY="393.0" mnemonicParsing="false" onAction="#accountantLoginMouseOnClick" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
                <font>
                   <Font size="37.0" />
                </font>
             </Button>
+            <Button layoutX="347.0" layoutY="45.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
          </children>
          <opaqueInsets>
             <Insets />

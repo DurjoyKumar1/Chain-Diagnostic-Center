@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="988.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="988.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="patient.AmbulanceController">
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
    </effect>
