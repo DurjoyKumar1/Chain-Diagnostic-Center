@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,8 +10,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.LiveChatController">
    <children>
-      <TextArea layoutX="36.0" layoutY="439.0" prefHeight="77.0" prefWidth="322.0" style="-fx-background-color: #60BEAF;" styleClass="ba" />
-      <Button layoutX="378.0" layoutY="452.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="124.0" style="-fx-background-color: #168008;" text="send" textFill="WHITE">
+      <TextArea fx:id="msgFxId" layoutX="36.0" layoutY="439.0" prefHeight="77.0" prefWidth="322.0" style="-fx-background-color: #60BEAF;" styleClass="ba" />
+      <Button layoutX="378.0" layoutY="452.0" mnemonicParsing="false" onAction="#sendMsgButtonMouseOnClick" prefHeight="51.0" prefWidth="124.0" style="-fx-background-color: #168008;" text="send" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -20,9 +21,9 @@
             <Font size="40.0" />
          </font>
       </Text>
-      <TextArea layoutX="72.0" layoutY="298.0" prefHeight="112.0" prefWidth="407.0" style="-fx-border-color: #60BEAF;" />
-      <TextArea layoutX="36.0" layoutY="151.0" prefHeight="112.0" prefWidth="407.0" style="-fx-border-color: #60BEAF;" />
+      <TextArea fx:id="showLiveChatFxId" layoutX="36.0" layoutY="151.0" prefHeight="208.0" prefWidth="407.0" style="-fx-border-color: #60BEAF;" />
       <Button layoutX="402.0" layoutY="67.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
+      <ComboBox fx:id="comboBoxFxID" layoutX="35.0" layoutY="392.0" prefWidth="150.0" />
    </children>
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="67.64" radius="34.875" width="73.86" />

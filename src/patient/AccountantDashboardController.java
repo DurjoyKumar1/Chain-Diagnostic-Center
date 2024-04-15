@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
@@ -22,6 +23,7 @@ import javafx.stage.Stage;
  * @author hp
  */
 public class AccountantDashboardController implements Initializable {
+
 
     /**
      * Initializes the controller class.
@@ -75,5 +77,20 @@ public class AccountantDashboardController implements Initializable {
         currentStage.setScene(newScene);
         currentStage.show();
     }
-    
-}
+
+    @FXML
+    private void taxbutton(ActionEvent event) throws IOException {
+         FXMLLoader loader = new FXMLLoader(getClass().getResource("Tax.fxml"));
+        Parent parent = loader.load();
+
+        
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+
+        Scene newScene = new Scene(parent);
+
+        currentStage.setScene(newScene);
+        currentStage.show();
+    }
+    }
+
