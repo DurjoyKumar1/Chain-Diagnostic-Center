@@ -22,7 +22,7 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="33.0" layoutY="294.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Tax ">
+      <Button layoutX="33.0" layoutY="294.0" mnemonicParsing="false" onAction="#taxbutton" prefHeight="74.0" prefWidth="272.0" text="Tax ">
          <font>
             <Font size="25.0" />
          </font>
