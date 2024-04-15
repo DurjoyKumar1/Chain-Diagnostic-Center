@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TrainingManagerDashboardController">
+   <children>
+      <BorderPane fx:id="borderpane" layoutX="-3.0" prefHeight="403.0" prefWidth="609.0" style="-fx-border-color: Green;">
+         <effect>
+            <InnerShadow choke="0.21" color="#107561" height="60.6" radius="31.285000000000004" width="66.54" />
+         </effect>
+         <top>
+            <MenuBar prefHeight="27.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Menu">
+                     <items>
+                        <MenuItem fx:id="scheduleSession" mnemonicParsing="false" text="Schedule Sessions " />
+                        <MenuItem fx:id="trackingTrainng" mnemonicParsing="false" text="Tracking Training" />
+                        <MenuItem fx:id="budgetManagement" mnemonicParsing="false" text="Budeget Management" />
+                        <MenuItem fx:id="developNewContent" mnemonicParsing="false" text="Develop new Content" />
+                        <MenuItem fx:id="feedbackAndComments" mnemonicParsing="false" text="Feedback and Comments" />
+                        <MenuItem fx:id="enhanceEngagement" mnemonicParsing="false" text="Enhance Engagement" />
+                        <MenuItem fx:id="security" mnemonicParsing="false" text="Security" />
+                        <MenuItem fx:id="trainingAccessibilty" mnemonicParsing="false" text="Training Accessibility" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <Label prefHeight="59.0" prefWidth="382.0" text="Welcome to Dashboard" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

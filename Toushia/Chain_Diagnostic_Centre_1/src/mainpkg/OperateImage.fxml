@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.OperateImageController">
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.8275" width="66.54" />
+   </effect>
+   <children>
+      <Label layoutX="158.0" layoutY="22.0" text="Operate Imaging System " textFill="#168008">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="253.0" text="Check the Image system: " textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="89.0" text="Feedback (AfterChecking Imaging Machines )  " textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="preparefortestingButton" layoutX="54.0" layoutY="142.0" mnemonicParsing="false" text="prepare for testing " textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="notPreparefortestingButton" layoutX="54.0" layoutY="183.0" mnemonicParsing="false" text="Not prepared for testing " textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="YesButton" layoutX="46.0" layoutY="298.0" mnemonicParsing="false" text="Yes " textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="NoButton" layoutX="46.0" layoutY="333.0" mnemonicParsing="false" text="No" textFill="#168008">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="47.0" layoutY="374.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="back" />
+   </children>
+</AnchorPane>

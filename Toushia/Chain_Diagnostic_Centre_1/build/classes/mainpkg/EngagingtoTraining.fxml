@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.EngagingToTrainingController">
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.8275" width="66.54" />
+   </effect>
+   <children>
+      <Label layoutX="159.0" layoutY="26.0" prefHeight="40.0" prefWidth="395.0" text="Engage Employee to Training" textFill="#168008">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="86.0" prefHeight="28.0" prefWidth="581.0" text="Review current engagement of the employees " textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="293.0" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reviewColumn" layoutX="25.0" layoutY="133.0" prefHeight="140.0" prefWidth="638.0">
+        <columns>
+          <TableColumn fx:id="seriakColumn" prefWidth="75.0" text="serial no " />
+          <TableColumn fx:id="contentTrainingColumn" prefWidth="187.0" text="content of training " />
+            <TableColumn fx:id="employeeNameColumn" prefWidth="187.0" text="employee name" />
+            <TableColumn fx:id="contentAttendingColumn" prefWidth="187.0" text="number of content attending " />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="rewardCombobox" layoutX="32.0" layoutY="295.0" prefHeight="25.0" prefWidth="527.0" promptText="reward for the employee who are engaging and success in the training course" />
+   </children>
+</AnchorPane>
