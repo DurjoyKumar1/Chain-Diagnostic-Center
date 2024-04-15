@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TrackTrainingSessionController">
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.8275" width="66.54" />
+   </effect>
+   <children>
+      <Label layoutX="130.0" layoutY="27.0" prefHeight="40.0" prefWidth="350.0" text="Tracking Training Sessions" textFill="#168008">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="293.0" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="employeeDevelopmnetTable" layoutX="13.0" layoutY="166.0" prefHeight="200.0" prefWidth="649.0">
+        <columns>
+          <TableColumn fx:id="serialNoColumn" prefWidth="75.0" text="Serial no" />
+          <TableColumn fx:id="employeeNameColumn" prefWidth="133.0" text="Employee name " />
+            <TableColumn fx:id="trainierAttendingColumn" prefWidth="245.0" text=" content of training attending" />
+            <TableColumn fx:id="assesmentDoneByEmployeeColumn" prefWidth="192.0" text=" Assesment done by employee" />
+        </columns>
+      </TableView>
+      <Button layoutX="18.0" layoutY="108.0" mnemonicParsing="false" onAction="#employeeDevelopmentMouseOnClicked" prefHeight="25.0" prefWidth="224.0" text="Show Employee development " textFill="#f8469f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="385.0" text="Give comments by analyzing from the table" textFill="#168008">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="commentsColumn" layoutX="17.0" layoutY="427.0" prefHeight="72.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
