@@ -25,7 +25,7 @@
             <AnchorPane id="AnchorPane" layoutX="-2.0" layoutY="4.0" prefHeight="537.0" prefWidth="957.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b5cadd" height="498.0" layoutX="17.0" layoutY="16.0" stroke="#00bbfa" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="4.0" width="407.0" />
-                  <Text fill="#23bf0b" layoutX="91.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient" textAlignment="CENTER" wrappingWidth="261.6197814941406">
+                  <Text fill="#23bf0b" layoutX="91.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient" textAlignment="CENTER" wrappingWidth="261.6197814941406">
                      <font>
                         <Font size="66.0" />
                      </font>
@@ -35,7 +35,7 @@
                         <Image url="@../../7092779.jpg" />
                      </image>
                   </ImageView>
-                  <TextField fx:id="nametextFieldFxid" alignment="CENTER" layoutX="84.0" layoutY="226.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
+                  <TextField fx:id="nametextFieldFxid" alignment="CENTER" layoutX="84.0" layoutY="198.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
                      <font>
                         <Font size="25.0" />
                      </font>
@@ -43,7 +43,7 @@
                         <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
                      </effect>
                   </TextField>
-                  <Button alignment="CENTER" layoutX="226.0" layoutY="372.0" mnemonicParsing="false" onAction="#patientLoginButtonMouseOnClick" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
+                  <Button alignment="CENTER" layoutX="226.0" layoutY="344.0" mnemonicParsing="false" onAction="#patientLoginButtonMouseOnClick" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
                      <font>
                         <Font size="37.0" />
                      </font>
@@ -59,7 +59,7 @@
                         <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
                      </effect>
                   </Button>
-                  <Button alignment="CENTER" layoutX="87.0" layoutY="391.0" mnemonicParsing="false" onAction="#signUpButtonMouseOnClick" prefHeight="33.0" prefWidth="89.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="SignUp" textAlignment="CENTER" textFill="#23bf0b">
+                  <Button alignment="CENTER" layoutX="87.0" layoutY="363.0" mnemonicParsing="false" onAction="#signUpButtonMouseOnClick" prefHeight="33.0" prefWidth="89.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="SignUp" textAlignment="CENTER" textFill="#23bf0b">
                      <font>
                         <Font size="19.0" />
                      </font>
@@ -67,9 +67,17 @@
                         <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
                      </effect>
                   </Button>
-                  <PasswordField fx:id="passwordtextFieldFxid" layoutX="83.0" layoutY="307.0" prefHeight="56.0" prefWidth="295.0" />
-                  <Label layoutX="35.0" layoutY="244.0" text="Name" />
-                  <Label layoutX="15.0" layoutY="325.0" text="Password" />
+                  <PasswordField fx:id="passwordtextFieldFxid" layoutX="83.0" layoutY="279.0" prefHeight="56.0" prefWidth="295.0" />
+                  <Label layoutX="35.0" layoutY="216.0" text="Name" />
+                  <Label layoutX="15.0" layoutY="297.0" text="Password" />
+                  <Button alignment="CENTER" layoutX="63.0" layoutY="460.0" mnemonicParsing="false" onAction="#accountantButtonMouseOnClick" prefHeight="28.0" prefWidth="204.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Login as Accountant" textAlignment="CENTER" textFill="#23bf0b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+                     </effect>
+                  </Button>
                </children>
                <opaqueInsets>
                   <Insets />

@@ -80,7 +80,7 @@ public class AccountantDashboardController implements Initializable {
 
     @FXML
     private void taxbutton(ActionEvent event) throws IOException {
-         FXMLLoader loader = new FXMLLoader(getClass().getResource("Tax.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Tax.fxml"));
         Parent parent = loader.load();
 
         
@@ -91,6 +91,10 @@ public class AccountantDashboardController implements Initializable {
 
         currentStage.setScene(newScene);
         currentStage.show();
+    }
+
+    @FXML
+    private void invoiceButton(ActionEvent event) {
     }
     }
 

@@ -27,7 +27,7 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Button layoutX="381.0" layoutY="294.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="272.0" text="Invoice">
+      <Button layoutX="381.0" layoutY="294.0" mnemonicParsing="false" onAction="#invoiceButton" prefHeight="74.0" prefWidth="272.0" text="Invoice">
          <font>
             <Font size="25.0" />
          </font>
