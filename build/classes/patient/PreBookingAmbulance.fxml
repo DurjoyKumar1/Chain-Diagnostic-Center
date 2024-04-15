@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="849.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.PreBookingAmbulanceController">
+   <effect>
+      <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
+   </effect>
+   <children>
+      <Text fill="#168008" layoutX="147.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pre Booking">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTextField" alignment="CENTER" layoutX="237.0" layoutY="154.0" prefHeight="55.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneNumbeTextField" alignment="CENTER" layoutX="236.0" layoutY="245.0" prefHeight="55.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+      </TextField>
+      <TextArea fx:id="addressFxId" layoutX="234.0" layoutY="330.0" prefHeight="115.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+      </TextArea>
+      <TextField fx:id="emailTextField" alignment="CENTER" layoutX="238.0" layoutY="464.0" prefHeight="55.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+      </TextField>
+      <DatePicker fx:id="dateTextField" layoutX="237.0" layoutY="576.0" prefHeight="31.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+      </DatePicker>
+      <TextField fx:id="timeTextField" alignment="CENTER" layoutX="239.0" layoutY="655.0" prefHeight="55.0" prefWidth="278.0">
+         <effect>
+            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+         </effect>
+      </TextField>
+      <Button alignment="CENTER" layoutX="266.0" layoutY="743.0" mnemonicParsing="false" onAction="#submitButtonMouseOnClick" prefHeight="68.0" prefWidth="169.0" text="Submit" textFill="#168008">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.25" color="#00bbfa" height="61.43" radius="30.215" width="61.43" />
+         </effect>
+      </Button>
+      <Label layoutX="118.0" layoutY="166.0" prefHeight="21.0" prefWidth="89.0" text="Name">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="242.0" prefHeight="45.0" prefWidth="208.0" text="Phone Number">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="355.0" prefHeight="45.0" prefWidth="110.0" text="Address">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="472.0" prefHeight="45.0" prefWidth="110.0" text="Email">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="572.0" prefHeight="45.0" prefWidth="110.0" text="Date">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="655.0" prefHeight="45.0" prefWidth="110.0" text="Time">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="487.0" layoutY="37.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" prefHeight="68.0" prefWidth="169.0" text="Back" textFill="#168008">
+         <font>
+            <Font size="31.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.25" color="#00bbfa" height="61.43" radius="30.215" width="61.43" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.SalaryController">
+   <children>
+      <Label layoutX="41.0" layoutY="125.0" prefHeight="21.0" prefWidth="170.0" text="Employe As">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="employeAsFxId" layoutX="41.0" layoutY="179.0" onAction="#employeAsButtonMouseOnClick" prefWidth="150.0" />
+      <Label layoutX="229.0" layoutY="124.0" prefHeight="21.0" prefWidth="170.0" text="ID">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="employeIdFxId" layoutX="229.0" layoutY="178.0" onAction="#employeIdButtonMouseOnClick" prefWidth="150.0" />
+      <Label layoutX="422.0" layoutY="125.0" prefHeight="21.0" prefWidth="170.0" text="Account No">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountNoFxId" layoutX="422.0" layoutY="178.0" />
+      <Label layoutX="639.0" layoutY="123.0" prefHeight="21.0" prefWidth="170.0" text="Name">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameFxId" layoutX="639.0" layoutY="176.0" />
+      <Label layoutX="847.0" layoutY="119.0" prefHeight="21.0" prefWidth="170.0" text="Amount">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountFxId" layoutX="847.0" layoutY="172.0" />
+      <Button layoutX="450.0" layoutY="257.0" mnemonicParsing="false" onAction="#sendButtonMouseOnClick" prefHeight="65.0" prefWidth="233.0" text="Send">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <TableView fx:id="salaryInfOFxId" layoutX="41.0" layoutY="418.0" prefHeight="250.0" prefWidth="995.0">
+        <columns>
+          <TableColumn fx:id="employeStatustableViewCoulmnFXID" prefWidth="148.0" text="Employe Status" />
+          <TableColumn fx:id="idtableViewCoulmnFXID" prefWidth="105.0" text="ID" />
+            <TableColumn fx:id="ACCtableViewCoulmnFXID" prefWidth="230.0" text="Acc No" />
+            <TableColumn fx:id="nametableViewCoulmnFXID" prefWidth="237.0" text="Name" />
+            <TableColumn fx:id="amounttableViewCoulmnFXID" prefWidth="185.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button layoutX="952.0" layoutY="40.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
+      <Label layoutX="399.0" layoutY="26.0" prefHeight="21.0" prefWidth="170.0" text="Salary">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
