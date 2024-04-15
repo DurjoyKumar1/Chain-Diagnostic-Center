@@ -4,6 +4,7 @@
  */
 package patient;
 
+import java.io.IOException;
 import java.net.URL;
 import static java.util.Locale.filter;
 import java.util.ResourceBundle;
@@ -12,7 +13,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
@@ -20,6 +25,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -117,5 +123,20 @@ public class OnlineDrAppoinmentController implements Initializable {
                 break;    
         } 
         
+    }
+
+    @FXML
+    private void backButtonMouseOnClick(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Patients Dashboard.fxml"));
+        Parent parent = loader.load();
+
+        
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+
+        Scene newScene = new Scene(parent);
+
+        currentStage.setScene(newScene);
+        currentStage.show();
     }
 }

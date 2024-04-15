@@ -5,53 +5,53 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="796.0" prefWidth="1009.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="796.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.PatientsDashboardController">
    <children>
       <Label layoutX="222.0" layoutY="27.0" prefHeight="103.0" prefWidth="608.0" text="Patient Dashboard">
          <font>
             <Font size="70.0" />
          </font>
       </Label>
-      <Button layoutX="58.0" layoutY="200.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Doctor Appoinment">
+      <Button layoutX="58.0" layoutY="200.0" mnemonicParsing="false" onAction="#DoctorAppoinmentMousOnClick" prefHeight="102.0" prefWidth="360.0" text="Doctor Appoinment">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button layoutX="552.0" layoutY="200.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="List of tests and Charges">
+      <Button layoutX="552.0" layoutY="200.0" mnemonicParsing="false" onAction="#BranchNameButtonMouseOnClick" prefHeight="102.0" prefWidth="360.0" text="Branch Name">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
-      <Button layoutX="553.0" layoutY="348.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Test Charges">
+      <Button layoutX="553.0" layoutY="348.0" mnemonicParsing="false" onAction="#testChargesButton" prefHeight="102.0" prefWidth="360.0" text="Test Charges">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="58.0" layoutY="357.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Ambulance Service">
+      <Button layoutX="58.0" layoutY="357.0" mnemonicParsing="false" onAction="#ambulanceServicesButton" prefHeight="102.0" prefWidth="360.0" text="Ambulance Service">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="553.0" layoutY="517.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Health Packeges">
+      <Button layoutX="553.0" layoutY="517.0" mnemonicParsing="false" onAction="#healthPackagesButton" prefHeight="102.0" prefWidth="360.0" text="Health Packeges">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="47.0" layoutY="526.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Review and Rating">
+      <Button layoutX="47.0" layoutY="526.0" mnemonicParsing="false" onAction="#reviewAndRatingButton" prefHeight="102.0" prefWidth="360.0" text="Review and Rating">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="552.0" layoutY="673.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Live Chat">
+      <Button layoutX="552.0" layoutY="673.0" mnemonicParsing="false" onAction="#livechatButton" prefHeight="102.0" prefWidth="360.0" text="Live Chat">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
-      <Button layoutX="58.0" layoutY="672.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="360.0" text="Video Consultancy">
+      <Button layoutX="58.0" layoutY="672.0" mnemonicParsing="false" onAction="#videoConsultansyButton" prefHeight="102.0" prefWidth="360.0" text="Video Consultancy">
          <font>
             <Font size="34.0" />
          </font>
       </Button>
+      <Button layoutX="847.0" layoutY="124.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
    </children>
 </AnchorPane>

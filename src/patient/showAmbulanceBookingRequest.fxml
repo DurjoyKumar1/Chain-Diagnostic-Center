@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.ShowAmbulanceBookingRequestController">
+   <children>
+      <TableView fx:id="ambulancePrebookingReqInfo" layoutX="28.0" layoutY="350.0" prefHeight="214.0" prefWidth="809.0">
+        <columns>
+          <TableColumn fx:id="nameTableViewColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="phoneNumTableViewColumn" prefWidth="104.0" text="Phone Num" />
+            <TableColumn fx:id="emailTableViewColumn" prefWidth="166.0" text="Email" />
+            <TableColumn fx:id="dateTableViewColumn" prefWidth="106.0" text="Date" />
+            <TableColumn fx:id="timeTableViewColumn" prefWidth="88.0" text="Time" />
+            <TableColumn fx:id="addressTableViewColumn" prefWidth="269.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button layoutX="708.0" layoutY="44.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="back" />
+      <TextArea fx:id="ambulanceReqDetailsFXId" layoutX="332.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="191.0" layoutY="162.0" mnemonicParsing="false" onAction="#showDetailsReqButtonMouseOnClick" text="Show" />
+   </children>
+</AnchorPane>

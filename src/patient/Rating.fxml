@@ -37,6 +37,7 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
          </effect>
       </Button>
+      <Button layoutX="410.0" layoutY="66.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="back" />
    </children>
    <effect>
       <InnerShadow choke="0.21" color="#168008" height="42.77" radius="26.3275" width="64.54" />
