@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.LabTechnicianDashboardController">
+   <children>
+      <Button layoutX="29.0" layoutY="95.0" mnemonicParsing="false" onAction="#labTestButton" prefHeight="77.0" prefWidth="217.0" text="LAB TEST" />
+      <Button layoutX="54.0" layoutY="447.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
+      <Label layoutX="130.0" layoutY="14.0" prefHeight="64.0" prefWidth="437.0" text="LAB TECHNICIAN DASHBOARD" textFill="#862323">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="341.0" layoutY="95.0" mnemonicParsing="false" onAction="#patientDataButton" prefHeight="77.0" prefWidth="217.0" text="Patient Data" />
+      <Button layoutX="29.0" layoutY="186.0" mnemonicParsing="false" onAction="#operateImageButton" prefHeight="77.0" prefWidth="217.0" text="OperateImage" />
+      <Button layoutX="341.0" layoutY="197.0" mnemonicParsing="false" onAction="#qualityControlButton" prefHeight="77.0" prefWidth="217.0" text="QualityControl" />
+      <Button layoutX="29.0" layoutY="274.0" mnemonicParsing="false" onAction="#inventoryButton" prefHeight="77.0" prefWidth="217.0" text="Inventory Management" />
+      <Button layoutX="341.0" layoutY="274.0" mnemonicParsing="false" onAction="#diagnosticReportButton" prefHeight="77.0" prefWidth="217.0" text="DiagnosticReport" />
+      <Button layoutX="29.0" layoutY="358.0" mnemonicParsing="false" onAction="#maintainingEquipmentButton" prefHeight="77.0" prefWidth="217.0" text="Maintain Laboratory Equipment" />
+      <Button layoutX="341.0" layoutY="358.0" mnemonicParsing="false" onAction="#technicalIssueButton" prefHeight="77.0" prefWidth="217.0" text="TechnicalIssue" />
+   </children>
+</AnchorPane>
