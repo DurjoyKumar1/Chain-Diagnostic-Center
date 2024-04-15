@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cdc.pharmacist.MedicineListController">
+   <top>
+      <!-- Include menu.fxml here -->
+      <fx:include source="menu.fxml" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <BorderPane prefHeight="500.0" prefWidth="700.0">
+               <top>
+                  <Text fill="#021ffc" stroke="#1bd057" strokeType="OUTSIDE" text="Medicine List" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </BorderPane.margin>
+                  </Text>
+               </top>
+               <center>
+                  <TableView prefHeight="450.0" prefWidth="700.0" BorderPane.alignment="TOP_CENTER">
+                     <columns>
+                        <TableColumn maxWidth="200.0" prefWidth="200.0" resizable="false" text="Medicine Name">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="medicineName" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn maxWidth="150.0" prefWidth="150.0" resizable="false" text="Supplier">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="supplier" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn maxWidth="100.0" prefWidth="100.0" text="Quantity">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="quantity" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn maxWidth="75.0" prefWidth="75.0" text="Price">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="price" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="174.0" text="Note">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="note" />
+                           </cellValueFactory>
+                        </TableColumn>
+                     </columns>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
