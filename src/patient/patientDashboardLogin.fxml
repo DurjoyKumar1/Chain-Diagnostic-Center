@@ -2,6 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
@@ -33,7 +35,7 @@
                         <Image url="@../../7092779.jpg" />
                      </image>
                   </ImageView>
-                  <TextField alignment="CENTER" layoutX="84.0" layoutY="226.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
+                  <TextField fx:id="nametextFieldFxid" alignment="CENTER" layoutX="84.0" layoutY="226.0" prefHeight="45.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
                      <font>
                         <Font size="25.0" />
                      </font>
@@ -41,15 +43,7 @@
                         <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
                      </effect>
                   </TextField>
-                  <TextField alignment="CENTER" layoutX="87.0" layoutY="304.0" prefHeight="54.0" prefWidth="295.0" style="-fx-border-color: #00bbfa;">
-                     <font>
-                        <Font size="25.0" />
-                     </font>
-                     <effect>
-                        <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-                     </effect>
-                  </TextField>
-                  <Button alignment="CENTER" layoutX="149.0" layoutY="393.0" mnemonicParsing="false" onAction="#patientLoginButtonMouseOnClick" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
+                  <Button alignment="CENTER" layoutX="226.0" layoutY="372.0" mnemonicParsing="false" onAction="#patientLoginButtonMouseOnClick" prefHeight="80.0" prefWidth="172.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="Log in" textAlignment="CENTER" textFill="#23bf0b">
                      <font>
                         <Font size="37.0" />
                      </font>
@@ -65,6 +59,17 @@
                         <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
                      </effect>
                   </Button>
+                  <Button alignment="CENTER" layoutX="87.0" layoutY="391.0" mnemonicParsing="false" onAction="#signUpButtonMouseOnClick" prefHeight="33.0" prefWidth="89.0" style="-fx-border-color: #00bbfa; -fx-background-color: #ffffff;" text="SignUp" textAlignment="CENTER" textFill="#23bf0b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
+                     </effect>
+                  </Button>
+                  <PasswordField fx:id="passwordtextFieldFxid" layoutX="83.0" layoutY="307.0" prefHeight="56.0" prefWidth="295.0" />
+                  <Label layoutX="35.0" layoutY="244.0" text="Name" />
+                  <Label layoutX="15.0" layoutY="325.0" text="Password" />
                </children>
                <opaqueInsets>
                   <Insets />

@@ -21,7 +21,7 @@ import javafx.stage.Stage;
  *
  * @author hp
  */
-public class PatientLogInController implements Initializable {
+public class EmergancyAmbulanceBookController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -32,23 +32,11 @@ public class PatientLogInController implements Initializable {
     }    
 
     @FXML
-    private void accountantLoginMouseOnClick(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("Accountant Dashboard.fxml"));
-        Scene newScene = new Scene(parent);
-
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        currentStage.setScene(newScene);
-        currentStage.show();
-    }
-
-    @FXML
-    private void backButtonMouseOnClick(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("mainDashboard.fxml"));
+    private void backButton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Ambulance.fxml"));
         Parent parent = loader.load();
 
-        
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
 
         Scene newScene = new Scene(parent);
 

@@ -4,9 +4,14 @@
  */
 package patient;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,8 +19,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -23,23 +27,32 @@ import javafx.stage.Stage;
  *
  * @author hp
  */
-public class AmbulanceController implements Initializable {
 
-    ToggleGroup tg;
+public class ReviewAndRatingController implements Initializable {
+
     @FXML
-    private RadioButton emergancyToggoleButton;
-    @FXML
-    private RadioButton preBookingToogleButton;
+    private TextArea addreviewDataFxId;
+    
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        tg = new ToggleGroup();
-        emergancyToggoleButton.setToggleGroup(tg);
-        preBookingToogleButton.setToggleGroup(tg);
         
+        try (BufferedReader br = new BufferedReader(new FileReader("rating.text"))) {
+            StringBuilder sb = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                sb.append(line).append("\n");
+            }
+            addreviewDataFxId.setText(sb.toString());
+        } catch (IOException ex) {
+            Logger.getLogger(PreBookingAmbulanceController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }    
 
     @FXML
-    private void backButton(ActionEvent event) throws IOException {
+    private void backButtonMouseOnClick(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Patients Dashboard.fxml"));
         Parent parent = loader.load();
 
@@ -54,32 +67,16 @@ public class AmbulanceController implements Initializable {
     }
 
     @FXML
-    private void confirmButton(ActionEvent event) throws IOException {
-        if(preBookingToogleButton.isSelected()){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PreBookingAmbulance.fxml"));
+    private void ratingButtonMouseOnClick(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Rating.fxml"));
         Parent parent = loader.load();
 
-        
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
 
         Scene newScene = new Scene(parent);
 
         currentStage.setScene(newScene);
         currentStage.show();
-        }
-        else{
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("emergancyAmbulanceBook.fxml"));
-            Parent parent = loader.load();
-
-            Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-            Scene newScene = new Scene(parent);
-
-            currentStage.setScene(newScene);
-            currentStage.show();
-        
-        }
     }
     
 }

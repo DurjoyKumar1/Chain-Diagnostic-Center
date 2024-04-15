@@ -2,74 +2,64 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="1218.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patient.SalaryController">
    <children>
-      <Text layoutX="506.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" wrappingWidth="266.33837890625">
-         <font>
-            <Font size="63.0" />
-         </font>
-      </Text>
       <Label layoutX="41.0" layoutY="125.0" prefHeight="21.0" prefWidth="170.0" text="Employe As">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <ComboBox layoutX="41.0" layoutY="179.0" prefWidth="150.0" />
+      <ComboBox fx:id="employeAsFxId" layoutX="41.0" layoutY="179.0" onAction="#employeAsButtonMouseOnClick" prefWidth="150.0" />
       <Label layoutX="229.0" layoutY="124.0" prefHeight="21.0" prefWidth="170.0" text="ID">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <ComboBox layoutX="229.0" layoutY="178.0" prefWidth="150.0" />
+      <ComboBox fx:id="employeIdFxId" layoutX="229.0" layoutY="178.0" onAction="#employeIdButtonMouseOnClick" prefWidth="150.0" />
       <Label layoutX="422.0" layoutY="125.0" prefHeight="21.0" prefWidth="170.0" text="Account No">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="422.0" layoutY="178.0" />
+      <TextField fx:id="accountNoFxId" layoutX="422.0" layoutY="178.0" />
       <Label layoutX="639.0" layoutY="123.0" prefHeight="21.0" prefWidth="170.0" text="Name">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="639.0" layoutY="176.0" />
+      <TextField fx:id="nameFxId" layoutX="639.0" layoutY="176.0" />
       <Label layoutX="847.0" layoutY="119.0" prefHeight="21.0" prefWidth="170.0" text="Amount">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField layoutX="847.0" layoutY="172.0" />
-      <DatePicker layoutX="1054.0" layoutY="172.0" prefHeight="31.0" prefWidth="141.0" />
-      <Label layoutX="1056.0" layoutY="119.0" prefHeight="45.0" prefWidth="120.0" text="Date">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-      <Button layoutX="450.0" layoutY="257.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="233.0" text="Send">
+      <TextField fx:id="amountFxId" layoutX="847.0" layoutY="172.0" />
+      <Button layoutX="450.0" layoutY="257.0" mnemonicParsing="false" onAction="#sendButtonMouseOnClick" prefHeight="65.0" prefWidth="233.0" text="Send">
          <font>
             <Font size="45.0" />
          </font>
       </Button>
-      <TableView layoutX="41.0" layoutY="418.0" prefHeight="250.0" prefWidth="1155.0">
+      <TableView fx:id="salaryInfOFxId" layoutX="41.0" layoutY="418.0" prefHeight="250.0" prefWidth="995.0">
         <columns>
-            <TableColumn prefWidth="89.0" text="SL" />
-          <TableColumn prefWidth="148.0" text="Employe Status" />
-          <TableColumn prefWidth="105.0" text="ID" />
-            <TableColumn prefWidth="230.0" text="Acc No" />
-            <TableColumn prefWidth="237.0" text="Name" />
-            <TableColumn prefWidth="172.0" text="Amount" />
-            <TableColumn prefWidth="179.0" text="Date" />
+          <TableColumn fx:id="employeStatustableViewCoulmnFXID" prefWidth="148.0" text="Employe Status" />
+          <TableColumn fx:id="idtableViewCoulmnFXID" prefWidth="105.0" text="ID" />
+            <TableColumn fx:id="ACCtableViewCoulmnFXID" prefWidth="230.0" text="Acc No" />
+            <TableColumn fx:id="nametableViewCoulmnFXID" prefWidth="237.0" text="Name" />
+            <TableColumn fx:id="amounttableViewCoulmnFXID" prefWidth="185.0" text="Amount" />
         </columns>
       </TableView>
+      <Button layoutX="952.0" layoutY="40.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
+      <Label layoutX="399.0" layoutY="26.0" prefHeight="21.0" prefWidth="170.0" text="Salary">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

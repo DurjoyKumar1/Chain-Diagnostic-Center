@@ -4,9 +4,13 @@
  */
 package patient;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +18,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -22,6 +28,11 @@ import javafx.stage.Stage;
  * @author hp
  */
 public class PatientDashboardLoginController implements Initializable {
+
+    @FXML
+    private TextField nametextFieldFxid;
+    @FXML
+    private PasswordField passwordtextFieldFxid;
 
     /**
      * Initializes the controller class.
@@ -48,6 +59,8 @@ public class PatientDashboardLoginController implements Initializable {
 
     @FXML
     private void backButtonMouseOnClick(ActionEvent event) throws IOException {
+        
+        
         FXMLLoader loader = new FXMLLoader(getClass().getResource("mainDashboard.fxml"));
         Parent parent = loader.load();
 
@@ -57,6 +70,18 @@ public class PatientDashboardLoginController implements Initializable {
 
         Scene newScene = new Scene(parent);
 
+        currentStage.setScene(newScene);
+        currentStage.show();
+    }
+
+    @FXML
+    private void signUpButtonMouseOnClick(ActionEvent event) throws IOException {
+    
+        
+        Parent parent = FXMLLoader.load(getClass().getResource("signUp.fxml"));
+        Scene newScene = new Scene(parent);
+
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         currentStage.setScene(newScene);
         currentStage.show();
     }

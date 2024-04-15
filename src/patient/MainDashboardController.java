@@ -11,11 +11,14 @@ import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.scene.control.MenuBar;
 
 public class MainDashboardController implements Initializable {
 
     @FXML
     private BorderPane borderPaneFxId;
+    @FXML
+    private MenuBar menubarFxId;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

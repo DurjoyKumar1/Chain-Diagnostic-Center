@@ -20,14 +20,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="82.0" layoutY="411.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="398.0" layoutY="150.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1&#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -36,14 +28,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="448.0" layoutY="411.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="768.0" layoutY="150.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1 &#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -52,14 +36,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="827.0" layoutY="411.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="26.0" layoutY="587.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1&#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -68,14 +44,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="85.0" layoutY="848.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="405.0" layoutY="587.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1&#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -84,14 +52,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="464.0" layoutY="848.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="764.0" layoutY="587.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1&#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -100,14 +60,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="823.0" layoutY="848.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <Text fill="#168008" layoutX="448.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your Package" wrappingWidth="523.9970703125">
          <font>
             <Font size="52.0" />
@@ -121,14 +73,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="1209.0" layoutY="411.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <TextArea editable="false" layoutX="1150.0" layoutY="587.0" prefHeight="245.0" prefWidth="305.0" style="-fx-background-color: #00bbfa;" text="Package 1&#10;Package detail&#10;Test: 1&#10;Test: 2&#10;Test: 3&#10;Price: 1000 taka">
          <font>
             <Font size="24.0" />
@@ -137,14 +81,6 @@
             <InnerShadow choke="0.21" color="#00bbfa" height="55.21" radius="27.105" width="55.21" />
          </effect>
       </TextArea>
-      <Button layoutX="1209.0" layoutY="848.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" text="Select" textFill="#168008">
-         <font>
-            <Font size="28.0" />
-         </font>
-         <effect>
-            <InnerShadow choke="0.21" color="#00bbfa" height="42.77" radius="26.3275" width="64.54" />
-         </effect>
-      </Button>
       <Button layoutX="1160.0" layoutY="67.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" text="Back" />
    </children>
 </AnchorPane>
