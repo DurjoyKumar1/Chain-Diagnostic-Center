@@ -13,7 +13,7 @@ import javafx.fxml.Initializable;
  *
  * @author hp
  */
-public class LoginOptionController implements Initializable {
+public class AuditMaintainCostController implements Initializable {
 
     /**
      * Initializes the controller class.
