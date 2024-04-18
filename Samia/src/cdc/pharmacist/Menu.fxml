@@ -11,36 +11,36 @@
         <menus>
           <Menu mnemonicParsing="false" text="Supplier">
             <items>
-              <MenuItem mnemonicParsing="false" text="Create" />
-                  <MenuItem mnemonicParsing="false" text="List" />
+              <MenuItem mnemonicParsing="false" text="Create" onAction="#handleMenuAction" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Medicine">
             <items>
-              <MenuItem mnemonicParsing="false" text="Create" />
-                  <MenuItem mnemonicParsing="false" text="List" />
+              <MenuItem mnemonicParsing="false" text="Create" onAction="#handleMenuAction" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Inventory">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Create" />
-                  <MenuItem mnemonicParsing="false" text="List" />
+                  <MenuItem mnemonicParsing="false" text="Create" onAction="#handleMenuAction" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Invoice">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Create" />
-                  <MenuItem mnemonicParsing="false" text="List" />
+                  <MenuItem mnemonicParsing="false" text="Create" onAction="#handleMenuAction" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Sales">
                <items>
-                  <MenuItem mnemonicParsing="false" text="List" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Track Receipt">
                <items>
-                  <MenuItem mnemonicParsing="false" text="List" />
+                  <MenuItem mnemonicParsing="false" text="List" onAction="#handleMenuAction" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Log out" />
